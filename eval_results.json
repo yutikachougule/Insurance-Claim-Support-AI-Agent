@@ -1,0 +1,416 @@
+{
+  "summary": {
+    "n_questions": 20,
+    "retrieval_hit_rate_at_k": 0.95,
+    "retrieval_mrr": 0.95,
+    "avg_correctness_1_5": 4.8,
+    "avg_groundedness_1_5": 5.0,
+    "avg_latency_seconds": 7.35,
+    "p50_latency_seconds": 9.23,
+    "p95_latency_seconds": 10.63
+  },
+  "retrieval_results": [
+    {
+      "question": "What's my deductible for collision damage?",
+      "expected_source": "auto_insurance_policy.md",
+      "retrieved_sources": [
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What are my bodily injury liability limits on my auto policy?",
+      "expected_source": "auto_insurance_policy.md",
+      "retrieved_sources": [
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Is my car covered if I use it for food delivery?",
+      "expected_source": "auto_insurance_policy.md",
+      "retrieved_sources": [
+        "auto_insurance_policy.md",
+        "health_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How much does my policy pay for a rental car while my vehicle is being repaired?",
+      "expected_source": "auto_insurance_policy.md",
+      "retrieved_sources": [
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md",
+        "auto_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's covered under roadside assistance and what's the limit?",
+      "expected_source": "auto_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "home_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "question": "What's the dwelling coverage limit on my home policy?",
+      "expected_source": "home_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "home_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Is flood damage covered by my homeowners policy?",
+      "expected_source": "home_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "auto_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's my deductible for wind or hail damage on my home?",
+      "expected_source": "home_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "auto_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How much personal property coverage do I have, and is there a limit on jewelry?",
+      "expected_source": "home_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "home_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What does loss of use coverage pay for and what's the limit?",
+      "expected_source": "home_insurance_policy.md",
+      "retrieved_sources": [
+        "home_insurance_policy.md",
+        "home_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's my individual deductible on the health plan?",
+      "expected_source": "health_insurance_policy.md",
+      "retrieved_sources": [
+        "health_insurance_policy.md",
+        "health_insurance_policy.md",
+        "health_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's the copay for a specialist visit?",
+      "expected_source": "health_insurance_policy.md",
+      "retrieved_sources": [
+        "health_insurance_policy.md",
+        "health_insurance_policy.md",
+        "health_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's the family out-of-pocket maximum on my health plan?",
+      "expected_source": "health_insurance_policy.md",
+      "retrieved_sources": [
+        "health_insurance_policy.md",
+        "health_insurance_policy.md",
+        "home_insurance_policy.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Do I need prior authorization for an MRI?",
+      "expected_source": "health_insurance_policy.md",
+      "retrieved_sources": [
+        "health_insurance_policy.md",
+        "health_insurance_policy.md",
+        "claims_faq.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's my coinsurance if I see an out-of-network provider?",
+      "expected_source": "health_insurance_policy.md",
+      "retrieved_sources": [
+        "health_insurance_policy.md",
+        "health_insurance_policy.md",
+        "claims_faq.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I choose my own repair shop for an auto claim?",
+      "expected_source": "claims_faq.md",
+      "retrieved_sources": [
+        "claims_faq.md",
+        "claims_process_guide.md",
+        "claims_faq.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What is subrogation?",
+      "expected_source": "claims_faq.md",
+      "retrieved_sources": [
+        "claims_faq.md",
+        "claims_process_guide.md",
+        "claims_faq.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Why might my health insurance claim get denied?",
+      "expected_source": "claims_faq.md",
+      "retrieved_sources": [
+        "claims_faq.md",
+        "claims_process_guide.md",
+        "claims_process_guide.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How long does a standard auto collision claim typically take to process?",
+      "expected_source": "claims_process_guide.md",
+      "retrieved_sources": [
+        "claims_process_guide.md",
+        "claims_faq.md",
+        "claims_process_guide.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's the first thing that happens after I report a claim?",
+      "expected_source": "claims_process_guide.md",
+      "retrieved_sources": [
+        "claims_process_guide.md",
+        "claims_faq.md",
+        "claims_faq.md"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    }
+  ],
+  "agent_results": [
+    {
+      "question": "What's my deductible for collision damage?",
+      "generated_answer": "Based on the policy information in [data\\auto_insurance_policy.md], your deductible for collision damage is $500. \n\nThis information is based on the \"Coverage Summary\" section, specifically the \"Collision Coverage\" subsection.",
+      "latency_seconds": 0.8037454999866895,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately references the policy and provides the correct deductible information without introducing unrelated details."
+    },
+    {
+      "question": "What are my bodily injury liability limits on my auto policy?",
+      "generated_answer": "Based on your auto insurance policy, your Bodily Injury Liability limits are $100,000 per person / $300,000 per accident. \n\nThis information is based on the Liability Coverage section of your policy.",
+      "latency_seconds": 0.7403735000407323,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately and plausibly provided the bodily injury liability limits based on the policy details."
+    },
+    {
+      "question": "Is my car covered if I use it for food delivery?",
+      "generated_answer": "Based on [auto_insurance_policy.md], this policy does not cover damage occurring while the vehicle is used for commercial delivery, unless a commercial rider is added.",
+      "latency_seconds": 1.0915974999661557,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly conveys the policy details from the reference answer."
+    },
+    {
+      "question": "How much does my policy pay for a rental car while my vehicle is being repaired?",
+      "generated_answer": "Based on the Rental Reimbursement section of your policy, Harborlight Insurance will pay up to $30 per day, with a maximum of 30 days, while your vehicle is being repaired due to a covered claim. [data\\auto_insurance_policy.md]",
+      "latency_seconds": 0.8026965000317432,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly conveys the key facts from the reference answer."
+    },
+    {
+      "question": "What's covered under roadside assistance and what's the limit?",
+      "generated_answer": "I don't have information on roadside assistance coverage in your policy. This information is not present in the provided policy documents. I suggest contacting Harborlight support at 1-800-555-0142 for more information. \n\nThis answer is based on [data\\home_insurance_policy.md].",
+      "latency_seconds": 1.3082721999962814,
+      "correctness": 1,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer is correct in stating that they don't have the information, but it fails to provide the actual key facts about roadside assistance coverage."
+    },
+    {
+      "question": "What's the dwelling coverage limit on my home policy?",
+      "generated_answer": "Based on [data\\home_insurance_policy.md], the dwelling coverage limit on your home policy is $300,000.",
+      "latency_seconds": 8.93878239998594,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The answer accurately reflects the reference answer and does not introduce any unrelated information."
+    },
+    {
+      "question": "Is flood damage covered by my homeowners policy?",
+      "generated_answer": "No, flood damage is not covered by your homeowners policy. This information is based on [data\\home_insurance_policy.md] under the Exclusions section. You may want to consider purchasing a separate flood policy through the National Flood Insurance Program or a private flood policy.",
+      "latency_seconds": 10.40165590000106,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly explains the exclusion of flood damage from the homeowners policy."
+    },
+    {
+      "question": "What's my deductible for wind or hail damage on my home?",
+      "generated_answer": "Based on [data\\home_insurance_policy.md], your deductible for wind or hail damage on your home is 2% of your dwelling coverage limit, which is $6,000 in designated high-risk regions.",
+      "latency_seconds": 9.176192799990531,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly conveys the key facts from the reference answer."
+    },
+    {
+      "question": "How much personal property coverage do I have, and is there a limit on jewelry?",
+      "generated_answer": "Based on [Personal Property (Coverage C)], you have a personal property coverage limit of $150,000, which is 50% of the dwelling limit. \n\nAdditionally, there is a special sub-limit of $1,500 for jewelry and watches in total. \n\nThis information is based on [Personal Property (Coverage C)].",
+      "latency_seconds": 10.63329969998449,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately and plausibly provided the key facts from the reference answer without introducing unrelated information."
+    },
+    {
+      "question": "What does loss of use coverage pay for and what's the limit?",
+      "generated_answer": "Based on the policy information in [data\\home_insurance_policy.md], Loss of Use (Coverage D) pays for additional living expenses (temporary housing, meals) if your home becomes uninhabitable due to a covered loss. The limit for this coverage is $60,000, which is 20% of the dwelling limit.",
+      "latency_seconds": 10.018980699998792,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly explains the Loss of Use coverage based on the provided reference."
+    },
+    {
+      "question": "What's my individual deductible on the health plan?",
+      "generated_answer": "Based on the Cost-Sharing Summary in your health insurance policy, your individual deductible is $1,500 per plan year. [data\\health_insurance_policy.md]",
+      "latency_seconds": 9.959566099976655,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately referenced the policy and provided the correct deductible amount without introducing unrelated information."
+    },
+    {
+      "question": "What's the copay for a specialist visit?",
+      "generated_answer": "Based on [data\\health_insurance_policy.md], the copay for a specialist visit is $50.",
+      "latency_seconds": 10.308574800030328,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately references the policy and provides the correct copay amount without introducing unrelated information."
+    },
+    {
+      "question": "What's the family out-of-pocket maximum on my health plan?",
+      "generated_answer": "Based on [data\\health_insurance_policy.md], the family out-of-pocket maximum is $12,000 per plan year.",
+      "latency_seconds": 9.95803259999957,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant accurately retrieved and presented the relevant policy detail without adding any extraneous information."
+    },
+    {
+      "question": "Do I need prior authorization for an MRI?",
+      "generated_answer": "Based on [data\\health_insurance_policy.md], yes, you need prior authorization for MRI and CT scans (outpatient).",
+      "latency_seconds": 7.676385800004937,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and directly references the relevant policy details without adding extraneous information."
+    },
+    {
+      "question": "What's my coinsurance if I see an out-of-network provider?",
+      "generated_answer": "Based on [data\\health_insurance_policy.md], if you see an out-of-network provider, the plan pays 60% and you pay 40%.",
+      "latency_seconds": 7.886017800017726,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly restates the key facts from the reference answer."
+    },
+    {
+      "question": "Can I choose my own repair shop for an auto claim?",
+      "generated_answer": "Yes, you can use any licensed repair shop for your auto claim. Harborlight also maintains a network of preferred shops that offer direct billing and a workmanship guarantee, but using one is optional. (Based on Auto Claims FAQ)",
+      "latency_seconds": 9.57966899999883,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly conveys the key facts from the reference answer without introducing unrelated information."
+    },
+    {
+      "question": "What is subrogation?",
+      "generated_answer": "Subrogation is the process by which Harborlight seeks reimbursement from an at-fault third party (or their insurer) after paying out your claim. If successful, you may be reimbursed for your deductible. \n\nThis answer is based on [data\\claims_faq.md].",
+      "latency_seconds": 9.217847699997947,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly explains subrogation based on the reference answer."
+    },
+    {
+      "question": "Why might my health insurance claim get denied?",
+      "generated_answer": "Based on the policy information in [data\\claims_faq.md], your health insurance claim might get denied for the following reasons:\n\n1. The service required prior authorization that wasn't obtained.\n2. The provider was out-of-network.\n3. The service is excluded under your plan.\n4. The claim was missing information.\n\nYou'll receive an Explanation of Benefits (EOB) detailing the reason for the denial.",
+      "latency_seconds": 9.833879200043157,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly summarizes the key reasons for a denied health insurance claim."
+    },
+    {
+      "question": "How long does a standard auto collision claim typically take to process?",
+      "generated_answer": "Based on the policy information in [data\\claims_process_guide.md], a standard auto collision claim typically takes 7-14 business days to process.",
+      "latency_seconds": 9.233345299959183,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately reflects the reference answer and sticks to plausible policy details."
+    },
+    {
+      "question": "What's the first thing that happens after I report a claim?",
+      "generated_answer": "Based on the policy information in [data\\claims_process_guide.md], after you report a claim, you'll receive a claim number (format: CLM-YYYY-XXXXXX) and a confirmation email.",
+      "latency_seconds": 9.350665700039826,
+      "correctness": 5,
+      "groundedness": 5,
+      "reasoning": "The assistant's answer accurately and plausibly summarizes the reference answer without adding any unrelated information."
+    }
+  ]
+}
