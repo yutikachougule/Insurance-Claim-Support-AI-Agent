@@ -1,0 +1,22 @@
+# Orchestration
+langgraph
+langchain-core
+
+# LLM
+langchain-groq
+
+# RAG / vector store
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+
+# Memory
+langmem
+
+# UI
+streamlit
+
+# Env vars
+python-dotenv
