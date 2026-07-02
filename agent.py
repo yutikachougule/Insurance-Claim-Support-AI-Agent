@@ -119,20 +119,20 @@ def build_graph(vector_store, llm, memory_manager, store, checkpointer):
 
     return graph.compile(store=store, checkpointer=checkpointer)
 
-
-# CLI entry point
-
-def main():
+def build_app():
+    """Construct embeddings, vector store, LLM, memory manager, and the
+    compiled graph. Shared by the CLI (main), the Streamlit app, and the
+    evaluation script so they all run the exact same pipeline."""
     if not os.environ.get("GROQ_API_KEY"):
         raise RuntimeError("Set GROQ_API_KEY in your environment or a .env file")
-
+ 
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
     vector_store = FAISS.load_local(
         VECTOR_STORE_DIR, embeddings, allow_dangerous_deserialization=True
     )
-
+ 
     llm = ChatGroq(model=GROQ_MODEL, temperature=0)
-
+ 
     store = InMemoryStore(index={"dims": EMBEDDING_DIMS, "embed": embeddings})
     memory_manager = create_memory_store_manager(
         llm,
@@ -142,9 +142,16 @@ def main():
         query_limit=3,
         store=store,
     )
-
+ 
     checkpointer = InMemorySaver()
-    app = build_graph(vector_store, llm, memory_manager, store, checkpointer)
+    return build_graph(vector_store, llm, memory_manager, store, checkpointer)
+# CLI entry point
+
+def main():
+    if not os.environ.get("GROQ_API_KEY"):
+        raise RuntimeError("Set GROQ_API_KEY in your environment or a .env file")
+    
+    app = build_app()
 
     # user_id scopes long-term memory, thread_id scopes conversation history.
     # Both are in-memory here, so they reset when the script exits.
